@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoreMon.Controllers
+namespace Kormon.Controllers
 {
     [Route("api/[controller]")]
 
@@ -15,7 +15,7 @@ namespace CoreMon.Controllers
         public IEnumerable<DriveInfo> LoadDrives()
         {
 
-            return System.IO.DriveInfo.GetDrives().ToList().Select(x => new CoreMon.Controllers.DriveInfo
+            return System.IO.DriveInfo.GetDrives().ToList().Select(x => new Kormon.Controllers.DriveInfo
             {
 
                 VolumeLabel = x.VolumeLabel,
