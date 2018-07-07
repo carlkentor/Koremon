@@ -18,7 +18,7 @@ class Monitor extends React.Component<DriveProps, {}> {
 
     componentWillReceiveProps(nextProps: DriveProps) {
         // This method runs when incoming props (e.g., route params) change
-        this.props.loadDrives();
+        //this.props.loadDrives();
     }
 
     public render() {
