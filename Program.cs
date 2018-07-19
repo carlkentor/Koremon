@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Debug;
 
 namespace Kormon
 {
@@ -20,6 +15,9 @@ namespace Kormon
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .ConfigureLogging(logging => logging.SetMinimumLevel(LogLevel.Debug)
+                                                    .AddFilter("System", LogLevel.Debug) //all providers
+                                                    .AddFilter<DebugLoggerProvider>("Microsoft", LogLevel.Trace))
                 .Build();
     }
 }
