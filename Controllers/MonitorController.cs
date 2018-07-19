@@ -9,14 +9,11 @@ namespace Kormon.Controllers
     [Route("api/[controller]")]
     public class MonitorController : Controller
     {
-
         private readonly IMapper _mapper;
-
         public MonitorController(IMapper mapper)
         {
             _mapper = mapper;
         }
-
         [HttpGet("[action]")]
         public IEnumerable<LogicalDriveInfo> LoadDrives()
         {
