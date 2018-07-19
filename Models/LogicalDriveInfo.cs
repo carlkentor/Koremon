@@ -19,6 +19,24 @@ namespace Kormon.Models
         //   T:System.IO.IOException:
         //     An I/O error occurred (for example, a disk error or a drive was not ready).
         public long AvailableFreeSpace { get; set; }
+
+
+        //
+        // Summary:
+        //     Indicates the amount of available free space on a drive, in bytes, formatted in kb, mb, gb etc.
+        //
+        // Returns:
+        //     The amount of free space available on the drive, in bytes.
+        //
+        // Exceptions:
+        //   T:System.UnauthorizedAccessException:
+        //     Access to the drive information is denied.
+        //
+        //   T:System.IO.IOException:
+        //     An I/O error occurred (for example, a disk error or a drive was not ready).
+        public string FormattedAvailableFreeSpace { get; set; }
+
+
         //
         // Summary:
         //     Gets the name of the file system, such as NTFS or FAT32.
@@ -35,6 +53,7 @@ namespace Kormon.Models
         //
         //   T:System.IO.IOException:
         //     An I/O error occurred (for example, a disk error or a drive was not ready).
+
         public string DriveFormat { get; set; }
         //
         // Summary:
@@ -43,6 +62,15 @@ namespace Kormon.Models
         // Returns:
         //     One of the enumeration values that specifies a drive type.
         public DriveType DriveType { get; set; }
+
+        //
+        // Summary:
+        //     Gets the drive type, such as CD-ROM, removable, network, or fixed, in string represantation.
+        //
+        // Returns:
+        //     One of the enumeration values that specifies a drive type.
+        public string FormattedDriveType { get; set; }
+
         //
         // Summary:
         //     Gets a value that indicates whether a drive is ready.
@@ -81,6 +109,27 @@ namespace Kormon.Models
         //   T:System.IO.IOException:
         //     An I/O error occurred (for example, a disk error or a drive was not ready).
         public long TotalFreeSpace { get; set; }
+
+
+
+        //
+        // Summary:
+        //     Gets the total amount of free space available on a drive, in bytes, formatted in kb, mb, gb etc.
+        //
+        // Returns:
+        //     The total free space available on a drive, in bytes.
+        //
+        // Exceptions:
+        //   T:System.UnauthorizedAccessException:
+        //     Access to the drive information is denied.
+        //
+        //   T:System.IO.DriveNotFoundException:
+        //     The drive is not mapped or does not exist.
+        //
+        //   T:System.IO.IOException:
+        //     An I/O error occurred (for example, a disk error or a drive was not ready).
+        public string FormattedTotalFreeSpace { get; set; }
+
         //
         // Summary:
         //     Gets the total size of storage space on a drive, in bytes.
@@ -98,6 +147,24 @@ namespace Kormon.Models
         //   T:System.IO.IOException:
         //     An I/O error occurred (for example, a disk error or a drive was not ready).
         public long TotalSize { get; set; }
+
+        //
+        // Summary:
+        //     Gets the total size of storage space on a drive, in bytes, in kb, mb, gb etc.
+        //
+        // Returns:
+        //     The total size of the drive, in bytes.
+        //
+        // Exceptions:
+        //   T:System.UnauthorizedAccessException:
+        //     Access to the drive information is denied.
+        //
+        //   T:System.IO.DriveNotFoundException:
+        //     The drive is not mapped or does not exist.
+        //
+        //   T:System.IO.IOException:
+        //     An I/O error occurred (for example, a disk error or a drive was not ready).
+        public string FormattedTotalSize { get; set; }
         //
         // Summary:
         //     Gets or sets the volume label of a drive.

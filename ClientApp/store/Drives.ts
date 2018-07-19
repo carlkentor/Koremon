@@ -12,11 +12,21 @@ export interface DriveCollectionState {
 
 export interface DriveInfo {
     availableFreeSpace: number;
+    formattedAvailableFreeSpace: string;
+
     driveFormat: string;
+
     driveType: string;
+    formattedDriveType: string;
+
     name: string;
+
     totalFreeSpace: number;
+    formattedTotalFreeSpace: string;
+
     totalSize: number;
+    formattedTotalSize: string;
+
     volumeLabel: string;
     rootDirectory: string;
 }

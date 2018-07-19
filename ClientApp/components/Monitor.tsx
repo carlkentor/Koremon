@@ -33,19 +33,23 @@ class Monitor extends React.Component<DriveProps, {}> {
         return <table className='table'>
             <thead>
                 <tr>
-                    <th>Free space</th>
+                    <th>Name</th>
+                    <th>Total Size</th>
+                    <th>Total free space</th>
+                    <th>Available space</th>
                     <th>Format</th>
                     <th>Type</th>
-                    <th>Name</th>
                 </tr>
             </thead>
             <tbody>
                 {this.props.drives.map(drive =>
                     <tr key={drive.name}>
-                        <td>{drive.availableFreeSpace}</td>
-                        <td>{drive.driveFormat}</td>
-                        <td>{drive.driveType}</td>
                         <td>{drive.name}</td>
+                        <td>{drive.formattedTotalSize}</td>
+                        <td>{drive.formattedTotalFreeSpace}</td>
+                        <td>{drive.formattedAvailableFreeSpace}</td>
+                        <td>{drive.driveFormat}</td>
+                        <td>{drive.formattedDriveType}</td>
                     </tr>
                 )}
             </tbody>
