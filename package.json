@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "devDependencies": {
+    "@types/chart.js": "^2.7.28",
     "@types/history": "4.6.0",
     "@types/react": "15.0.35",
     "@types/react-dom": "15.5.1",
@@ -40,5 +41,10 @@
     "webpack": "2.5.1",
     "webpack-hot-middleware": "2.18.2",
     "webpack-merge": "4.1.0"
+  },
+  "dependencies": {
+    "@types/chart.js": "^2.7.28",
+    "chart.js": "^2.7.2",
+    "react-chartjs-2": "^2.7.4"
   }
 }

@@ -186,5 +186,7 @@ namespace Kormon.Models
         //     The volume label is being set on a network or CD-ROM drive. -or- Access to the
         //     drive information is denied.
         public string VolumeLabel { get; set; }
+
+        public string FormattedUsedSpace { get; set; }
     }
 }

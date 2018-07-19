@@ -13,6 +13,7 @@ export interface DriveCollectionState {
 export interface DriveInfo {
     availableFreeSpace: number;
     formattedAvailableFreeSpace: string;
+    formattedUsedSpace: string;
 
     driveFormat: string;
 

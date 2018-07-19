@@ -3,6 +3,7 @@ import { Link, RouteComponentProps } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { ApplicationState } from '../store';
 import * as DriveCollectionState from '../store/Drives';
+import { Doughnut } from 'react-chartjs-2';
 
 // At runtime, Redux will merge together...
 type DriveProps =
@@ -30,33 +31,37 @@ class Monitor extends React.Component<DriveProps, {}> {
     }
 
     private renderDriveCollection() {
-        return <table className='table'>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Total Size</th>
-                    <th>Total free space</th>
-                    <th>Available space</th>
-                    <th>Format</th>
-                    <th>Type</th>
-                </tr>
-            </thead>
-            <tbody>
-                {this.props.drives.map(drive =>
-                    <tr key={drive.name}>
-                        <td>{drive.name}</td>
-                        <td>{drive.formattedTotalSize}</td>
-                        <td>{drive.formattedTotalFreeSpace}</td>
-                        <td>{drive.formattedAvailableFreeSpace}</td>
-                        <td>{drive.driveFormat}</td>
-                        <td>{drive.formattedDriveType}</td>
-                    </tr>
-                )}
-            </tbody>
-        </table>;
-    }
 
-  
+        return <div className="row">
+            <div className="col-md-12">
+                {this.props.drives.map((drive, index) => {
+                    var pieChart = this.calcDrivePie(drive);
+                    return pieChart;
+                })
+                }
+            </div>
+        </div>;
+    }
+    public calcDrivePie(DriveInfo: DriveCollectionState.DriveInfo) {
+        var data = {
+            labels: [
+                'Available Space ' + DriveInfo.formattedAvailableFreeSpace,
+                'Used Space ' + DriveInfo.formattedUsedSpace
+            ],
+            datasets: [{
+                data: [DriveInfo.availableFreeSpace, DriveInfo.totalSize - DriveInfo.availableFreeSpace, 0],
+                backgroundColor: [
+                    'rgb(135,206,250)',
+                    'rgb(220,20,60)'
+                ],
+                hoverBackgroundColor: [
+                    '#87CEFA',
+                    'rgb(220,20,60)'
+                ]
+            }]
+        };
+            return <div className="col-md-6"> <h3 className="text-center">{DriveInfo.name}</h3> <Doughnut data={data} /></div>;
+    }
 }
 
 export default connect(
