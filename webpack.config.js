@@ -36,6 +36,7 @@ module.exports = (env) => {
         output: { path: path.join(__dirname, clientBundleOutputDir) },
         plugins: [
             new ExtractTextPlugin('site.css'),
+            new ExtractTextPlugin('kormon.css'),
             new webpack.DllReferencePlugin({
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')

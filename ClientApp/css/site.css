@@ -8,7 +8,7 @@
 .main-nav li a.active:focus {
     background-color: #4189C7;
     color: white;
-}
+} 
 
 /* Keep the nav menu independent of scrolling and on top of other items */
 .main-nav {

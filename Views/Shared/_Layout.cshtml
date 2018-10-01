@@ -1,18 +1,287 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Kormon</title>
-    <base href="~/" />
 
     <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+    <link href="~/dist/kormon.css" rel="stylesheet" asp-append-version="true" />
 </head>
-<body>
+<body id="particles-js" style="background:#000; margin:0;">
+    <header id="header" class="">
+        <h1 class="logo">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="581.4px" height="581.4px" viewBox="0 0 581.4 581.4" style="enable-background:new 0 0 581.4 581.4;" xml:space="preserve">
+            <path d="M549.3,244.7l-47.699-17.5c-5.4-18-13.2-34.9-22.801-50.6l7.801-16.8c8.6-18.6,4.699-40.7-9.801-55.2
+		s-36.6-18.4-55.199-9.8l-16.801,7.8c-15.699-9.6-32.6-17.4-50.6-22.8l-17.5-47.7c-7.1-19.3-25.4-32.1-46-32.1
+		c-20.5,0-38.9,12.8-46,32.1l-17.5,47.7c-18,5.4-34.9,13.2-50.6,22.8l-16.8-7.8c-18.7-8.6-40.7-4.7-55.2,9.8s-18.4,36.6-9.8,55.2
+		l7.8,16.8c-9.6,15.7-17.4,32.6-22.8,50.6l-47.7,17.5C12.8,251.8,0,270.1,0,290.7c0,20.5,12.8,38.9,32.1,46l47.7,17.5
+		c5.4,18,13.2,34.9,22.8,50.6l-7.8,16.801c-8.6,18.6-4.7,40.699,9.8,55.199c9.4,9.4,21.9,14.301,34.6,14.301c7,0,14-1.5,20.6-4.5
+		l16.8-7.801c15.7,9.601,32.6,17.4,50.6,22.801l17.5,47.699c7.1,19.301,25.4,32.101,46,32.101c20.5,0,38.9-12.8,46-32.101
+		l17.5-47.699c18-5.4,34.9-13.2,50.6-22.801l16.801,7.801c6.6,3,13.6,4.5,20.6,4.5c12.7,0,25.2-5,34.6-14.301
+		c14.5-14.5,18.4-36.6,9.801-55.199L478.8,404.8c9.601-15.699,17.4-32.6,22.801-50.6l47.699-17.5c19.301-7.1,32.101-25.4,32.101-46
+		C581.4,270.2,568.601,251.8,549.3,244.7z M283.5,345.7c-18.2,21-42.5,32.6-68.3,32.6s-50-11.6-68.3-32.6
+		c-37.6-43.4-37.6-113.9,0-157.2c2.2-2.5,5.8-2.5,7.9,0l128.6,148.101c1.1,1.199,1.7,2.899,1.7,4.6
+		C285.2,342.9,284.5,344.5,283.5,345.7z M434.5,345.7c-18.2,21-42.5,32.6-68.3,32.6s-50-11.6-68.3-32.6c-1.101-1.2-1.7-2.9-1.7-4.6
+		c0-1.7,0.6-3.4,1.7-4.601l128.6-148.1c2.2-2.5,5.8-2.5,8,0C472.101,231.9,472.101,302.4,434.5,345.7z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>
+        </h1>
+        <div id="headerIn">
+            <ul class="langues">
+                <li><a href="/">SV</a></li>
+                <li><a href="/en" class="actif">EN</a></li>
+            </ul>
+            <div class="menu">
+                <ul class="principal">
+                    <li><a href="/">Home</a></li>
+                    <li>
+                        <a href="/">Story</a>
+                        <ul>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Contact</a></li>
+                            <li><a href="/">lel</a></li>
+                            <li><a href="/">where?</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/">Link</a>
+                        <ul>
+                            <li><a href="/">Link</a></li>
+                            <li><a href="/">Link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Link</a></li>
+                    <li><a href="/">Link</a></li>
+                </ul>
+                <div class="secondaire">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/counter">Counter</a></li>
+                        <li><a href="/fetchData">Fetch</a></li>
+                        <li><a href="/monitor">Monitor</a></li>
+                    </ul>
+                    <div class="hugggy">
+                        <a href="/" target="_blank">
+                            <span>=></span>
+                            <svg viewBox="0 0 48 48">
+                                <path class="hugggy-path" d="M46.6,17.2c2.5-6.7-1-14.2-7.8-16.7L37.3,0l-4.4,12.2l4.6,1.7l2.5-7c2.3,2.2,3.2,5.5,2,8.7
+									c-1.5,4.2-6.2,6.4-10.4,4.9c-4.2-1.5-6.4-6.2-4.9-10.4c0.9-2.4,2.7-4.1,4.9-4.9L30,0.6c-3.5,1.3-6.4,4-7.8,7.8
+									c-0.3,0.9-0.5,1.8-0.7,2.6c-2.2-1.7-5-2.8-8-2.8c-4,0-7.6,1.8-10,4.6L7.3,16c1.5-1.8,3.7-3,6.3-3c4.5,0,8.1,3.6,8.1,8.1
+									c0,4.5-3.6,8.1-8.1,8.1c-3.3,0-6.2-2-7.4-4.9h7.4v-4.9h-13v1.6c0,7.2,5.8,13,13,13c1.7,0,3.4-0.3,4.9-0.9
+									c-0.8,5.6,2.2,11.2,7.6,13.6c6.6,2.9,14.2,0,17.2-6.6l0.7-1.5L32,33.5L30,38l6.8,3c-2.3,2.1-5.7,2.8-8.8,1.4
+									c-4.1-1.8-5.9-6.6-4.1-10.7s6.6-5.9,10.7-4.1c2.3,1,3.9,3,4.5,5.2l4.7-1.4c-0.7-2.6-2.3-4.9-4.5-6.6C42.6,23.5,45.3,20.8,46.6,17.2
+									z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <button class="burger"><span></span></button>
+    <div class="category-page category-1">
+        <div class="category-cadre" data-row="4" data-col="2">
+            <div class="home">
+                <div class="home-in">
+                    <div class="logo-big"><img src="https://www.belgiumwwii.be/image/belgium-wwii-big.png" alt="BELGIUM-WWII"></div>
+                    <ul class="langues">
+                        <li><a href="https://www.belgiumwwii.be/">FR</a></li>
+                        <li><a href="https://www.belgiumwwii.be/nl/" class="actif">NL</a></li>
+                        <li><a href="https://www.belgiumwwii.be/de/">DE</a></li>
+                    </ul>
+                    <p>Een virtueel platform over België en zijn inwoners tijdens de Tweede Wereldoorlog</p>
+                </div>
+                <div class="scroller"><div class="explorer">ontdekken</div><div class="barre"><span></span></div></div>
+            </div>
+        </div>
+        <div class="category-cadre" data-row="4" data-col="1" data-align="right">
+            <div class="category-cadre" data-row="4" data-col="2" data-align="left">
+                <div class="listNews owl-carousel owl-loaded owl-drag">
+
+
+
+
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-1744px, 0px, 0px); transition: 0s; width: 6976px;">
+                            <div class="owl-item cloned" style="width: 872px;">
+                                <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/20706460_1791677094456910_542826757_n.jpg');">
+                                    <div class="newsIn">
+                                        <div class="titleNews">
+                                            <p>Last news</p>
+                                            <h2> Adolf Schamroth </h2>
+                                        </div>
+                                        <p>Het verhaal van een Joodse familie die in bezet België in de clandestiniteit wordt gedwongen</p>
+                                        <p><a class="readmore" href="https://www.belgiumwwii.be/nl/oorlogsportretten/adolf-schamroth.html">Meer weten</a></p>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 872px;">
+                                <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/belvirmus_jmfrancois_lettre_saint_nicolas_2.jpg');">
+                                    <div class="newsIn">
+                                        <div class="titleNews">
+                                            <p>Last news</p>
+                                            <h2>Lieve Sint</h2>
+                                        </div>
+                                        <p>“Allerbeste Sint-Niklaas,</p>
+                                        <p>
+                                            Ik weet dat het oorlog is, maar ik schrijf u toch.&nbsp;»
+                                        </p>
+                                        <p>
+                                            In 1943 schrijft Jeanne-Marie Françoise, alias Ninette (9 jaar), een brief aan de grote heilige. Zij vraagt niet om speelgoed, maar om de terugkeer van haar broer Camille, die naar Duitsland weggevoerd is. Ontdek het verhaal van een kind in het hart van bezet België.
+                                        </p>							<p><a class="readmore" href="https://www.belgiumwwii.be/nl/oorlogsportretten/jeanne-marie-francois.html">Meer weten</a></p>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item active" style="width: 872px;">
+                                <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/30208.jpg');">
+                                    <div class="newsIn">
+                                        <div class="titleNews">
+                                            <p>Last news</p>
+                                            <h2>Guy Thys</h2>
+                                        </div>
+                                        <p>Voetballer ondanks de oorlog... Ontdek het veelbewogen begin van de voetbalcarrière van de jonge Guy Thys.</p>							<p><a class="readmore" href="https://www.belgiumwwii.be/nl/oorlogsportretten/guy-thys.html">Meer weten</a></p>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 872px;">
+                                <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/27948.jpg');">
+                                    <div class="newsIn">
+                                        <div class="titleNews">
+                                            <p>Last news</p>
+                                            <h2>Het Verzet</h2>
+                                        </div>
+                                        <p>
+                                            Ontdek de geschiedenis van mannen en vrouwen die, vanaf 1940, het bezettingsregime weigeren te aanvaarden
+                                        </p>							<p><a class="readmore" href="https://www.belgiumwwii.be/nl/belgie-in-oorlog/artikels/verzet.html">Meer weten</a></p>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 872px;">
+                                <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/20706460_1791677094456910_542826757_n.jpg');">
+                                    <div class="newsIn">
+                                        <div class="titleNews">
+                                            <p>Last news</p>
+                                            <h2> Adolf Schamroth </h2>
+                                        </div>
+                                        <p>Het verhaal van een Joodse familie die in bezet België in de clandestiniteit wordt gedwongen</p>
+                                        <p><a class="readmore" href="https://www.belgiumwwii.be/nl/oorlogsportretten/adolf-schamroth.html">Meer weten</a></p>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 872px;">
+                                <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/belvirmus_jmfrancois_lettre_saint_nicolas_2.jpg');">
+                                    <div class="newsIn">
+                                        <div class="titleNews">
+                                            <p>Last news</p>
+                                            <h2>Lieve Sint</h2>
+                                        </div>
+                                        <p>“Allerbeste Sint-Niklaas,</p>
+                                        <p>
+                                            Ik weet dat het oorlog is, maar ik schrijf u toch.&nbsp;»
+                                        </p>
+                                        <p>
+                                            In 1943 schrijft Jeanne-Marie Françoise, alias Ninette (9 jaar), een brief aan de grote heilige. Zij vraagt niet om speelgoed, maar om de terugkeer van haar broer Camille, die naar Duitsland weggevoerd is. Ontdek het verhaal van een kind in het hart van bezet België.
+                                        </p>							<p><a class="readmore" href="https://www.belgiumwwii.be/nl/oorlogsportretten/jeanne-marie-francois.html">Meer weten</a></p>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 872px;">
+                                <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/30208.jpg');">
+                                    <div class="newsIn">
+                                        <div class="titleNews">
+                                            <p>Last news</p>
+                                            <h2>Guy Thys</h2>
+                                        </div>
+                                        <p>Voetballer ondanks de oorlog... Ontdek het veelbewogen begin van de voetbalcarrière van de jonge Guy Thys.</p>							<p><a class="readmore" href="https://www.belgiumwwii.be/nl/oorlogsportretten/guy-thys.html">Meer weten</a></p>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 872px;">
+                                <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/27948.jpg');">
+                                    <div class="newsIn">
+                                        <div class="titleNews">
+                                            <p>Last news</p>
+                                            <h2>Het Verzet</h2>
+                                        </div>
+                                        <p>
+                                            Ontdek de geschiedenis van mannen en vrouwen die, vanaf 1940, het bezettingsregime weigeren te aanvaarden
+                                        </p>							<p><a class="readmore" href="https://www.belgiumwwii.be/nl/belgie-in-oorlog/artikels/verzet.html">Meer weten</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="owl-nav"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div>
+                </div>
+            </div>
+            <!--<div class="category-cadre" data-row="2" data-col="2" data-align="left">
+                                <div class="listNews owl-carousel">
+                                    <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/action-de-sabotage-aux-environs-de-verviers.jpg');">
+                        <div class="newsIn">
+                            <div class="titleNews">
+                                <p>Blog</p>
+                                <h2>Premier article de blog</h2>
+                            </div>
+                            <p>Mon résumé</p>
+                            <p><a class="readmore" href="https://www.belgiumwwii.be/nl/blog/premier-article-de-blog.html">Meer weten</a></p>
+                        </div>
+                    </div>
+                                        <div class="news" style="background-image:url('https://www.belgiumwwii.be/image/article/renA-delbrouck.jpg');">
+                        <div class="newsIn">
+                            <div class="titleNews">
+                                <p>Blog</p>
+                                <h2>Titre blog</h2>
+                            </div>
+                            <p>résumé du blog</p>
+                            <p><a class="readmore" href="https://www.belgiumwwii.be/nl/blog/titre-blog.html">Meer weten</a></p>
+                        </div>
+                    </div>
+                                    </div>
+            </div>-->
+        </div>
+        <a href="/counter" class="category-cadre" data-row="1" data-col="1">
+            <span class="details">
+                <span class="title">Header</span>
+                <span class="text">Lorem ipsum sit dolor amet..</></span>
+            </span>
+        </a>
+        <a href="/counter" class="category-cadre" data-row="1" data-col="1">
+            <span class="details">
+                <span class="title">Header</span>
+                <span class="text"><p>Lorem ipsum sit dolor amet.</p></span>
+            </span>
+        </a>
+        <a href="/counter" class="category-cadre" data-row="1" data-col="1">
+            <span class="details">
+                <span class="title">Header</span>
+                <span class="text"><p>Lorem ipsum sit dolor amet.</p></span>
+            </span>
+        </a>
+        <a href="/counter" class="category-cadre" data-row="1" data-col="1">
+            <span class="details">
+                <span class="title">Header</span>
+                <span class="text"><p>Lorem ipsum sit dolor amet.</p></span>
+            </span>
+        </a>
+    </div>
     @RenderBody()
 
     <script src="~/dist/vendor.js" asp-append-version="true"></script>
+    <script src="~/dist/particles.js"></script>
+    <script src="~/dist/particles.settings.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+<script>
+    document.getElementsByClassName("burger")[0].addEventListener("click", function () { document.getElementsByTagName("body")[0].classList.toggle('menuOpened'); });
+</script>

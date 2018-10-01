@@ -24,8 +24,8 @@ class Monitor extends React.Component<DriveProps, {}> {
 
     public render() {
         return <div>
-            <h1>Drive overview</h1>
-            <p>This component demonstrates the disk information on the client computer.</p>
+            <h1 className="text-center">Drive overview</h1>
+            <p className="text-center">This component demonstrates the disk information on the client computer.</p>
             {this.renderDriveCollection()}
         </div>;
     }
